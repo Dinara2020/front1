@@ -6,16 +6,14 @@
 @media (min-width: 1200px) {
     /* стили указанные здесь применяются, если ширина viewport больше или равно 1200px */
     html, body {
-        width: 100%;
-        height: 100%;
         overflow: hidden;
     }
     .rectangle {
         position: absolute;
-        width: 978px;
-        height: 976px;
-        left: -400px;
-        top: -500px;
+        width: 100vh;
+        height: 100vh;
+        left: -25vw;
+        top: -50vh;
         border-radius:50%;
         background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
         mix-blend-mode: normal;
@@ -24,61 +22,61 @@
     }
 
     .rectangle_second {
-        position: absolute;
-        width: 978px;
-        height: 976px;
-        left: 800px;
-        top: 350px;
+        height: 150vh;
+        width: 150vh;
+        right: -15vw;
+        top: 25vw;
         background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
         mix-blend-mode: normal;
         opacity: 0.25;
-        transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+        transform: rotate(-173deg);
         border-radius:50%;
+        position: absolute;
     }
 }
 
 @media (max-width: 1199.98px) {
     html, body {
         overflow: hidden;
-        background-size: cover;
     }
     .rectangle {
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        left: -98.6px;
+        width: 100vw;
+        height: 100vw;
+        left: -50vw;
         top: -110px;
         border-radius:50%;
         background: linear-gradient(181deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
         mix-blend-mode: normal;
         opacity: 0.5;
         transform: rotate(-173deg);
+        position: absolute;
     }
 
     .rectangle_second {
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        left: 198.6px;
-        top: 500px;
+        height: 80vh;
+        width: 80vh;
+        left: 40vw;
+        top: 100vw;
         background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
         mix-blend-mode: normal;
         opacity: 0.25;
-        transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+        transform: rotate(-173deg);
         border-radius:50%;
+        position: absolute;
     }
-
 }
-
+.rectangle_second__overflow{
+    overflow: hidden;
+}
 .outer {
+    background-size: cover;
     background: #19A1AE;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%;
-    z-index: -3;
-    background-size: cover;
+    width: 100vw;
+    position: relative;
 }
 /* Rectangle */
 p {
@@ -115,8 +113,8 @@ p {
 }
 .card__foto {
     position: absolute;
-    width: 106px;
-    height: 106px;
+    width: 96px;
+    height: 96px;
     left: calc(50% - 96px/2);
     top: calc(50% - 96px/2 - 47px);
     background: url("images/Face cut 2.jpg");
@@ -161,6 +159,7 @@ p {
     position:absolute;
     bottom:0;
     width: 100%;
+    font-size: 0;
 }
 .card__bottom_text {
     font-size: 10px;
@@ -169,12 +168,11 @@ p {
 }
 .row {
     width: 33.33%;
-    float: left;
-    display: flex;
-    flex-direction: column;
+    padding-top: 24px;
+    white-space: normal;
     justify-content: center;
     align-items: center;
-    height: 88px;
+    display: inline-block;
 }
 .mt10 {
 margin-top: 10px;
