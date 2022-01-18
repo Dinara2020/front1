@@ -136,7 +136,6 @@ p {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 18px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -148,11 +147,9 @@ p {
 }
 .card__info_city {
     font-size: 14px;
-    line-height: 14px;
     text-align: center;
     color: #6B7082;
     font-weight: normal;
-
 }
 .card__bottom {
     margin: 25px;
@@ -166,7 +163,5 @@ p {
 .row {
     width: 33.33%;
     white-space: normal;
-    justify-content: center;
-    align-items: center;
     display: inline-block;
 }
