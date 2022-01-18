@@ -82,13 +82,15 @@
 p {
     font-family: Kumbh Sans, serif;
     color: #2E3349;
-
 }
 .card {
     background: #FFFFFF;
     box-shadow: 0 50px 100px -20px rgba(8, 70, 94, 0.504835);
     border-radius: 15px;
-    height: 374px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     width: 350px;
     z-index: 9999;
     margin-right: auto;
@@ -97,43 +99,39 @@ p {
 }
 
 .card__header {
-    height: 140px;
+    padding-top: 140px;
     background-image: url("images/bg-bubbles.svg");
     background-repeat: no-repeat;
     width: 100%;
     border-radius: 15px 15px 0 0;
 }
 .card__border {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 76.2%;
-    bottom: 23.53%;
+    height: 1px;
     background: #E8E9EC;
 }
-.card__foto {
-    position: absolute;
+.card__foto_image {
+    position: relative;
     width: 96px;
     height: 96px;
-    left: calc(50% - 96px/2);
-    top: calc(50% - 96px/2 - 47px);
+    top: -48px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     background: url("images/Face cut 2.jpg");
     background-size: cover;
     border: 5px solid #FFFFFF;
     border-radius: 50%;
 }
-.card_container {
-    display: flex;
-    align-items: center;
-    height: 146px;
+.card__center {
+    position: relative;
+    margin-bottom: 30px;
 }
 .card__info {
     width: 100%;
-    top: 50%;
-    margin-top: 40px;
+    margin-top: -31px;
 }
 .card__name {
-    height: 18px;
     font-family: Kumbh Sans, serif;
     font-style: normal;
     font-weight: bold;
@@ -142,6 +140,7 @@ p {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+
 }
 .card__info_normal {
     font-weight: normal;
@@ -153,12 +152,11 @@ p {
     text-align: center;
     color: #6B7082;
     font-weight: normal;
+
 }
 .card__bottom {
-    height: 88px;
-    position:absolute;
-    bottom:0;
-    width: 100%;
+    margin: 25px;
+    padding: 0 30px;
     font-size: 0;
 }
 .card__bottom_text {
@@ -168,15 +166,8 @@ p {
 }
 .row {
     width: 33.33%;
-    padding-top: 24px;
     white-space: normal;
     justify-content: center;
     align-items: center;
     display: inline-block;
 }
-.mt10 {
-margin-top: 10px;
-}
-.mt9 {
-     margin-top: 9px;
- }
